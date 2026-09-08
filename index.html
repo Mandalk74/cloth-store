@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🛍️ MyStore</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#categories-wrapper">Categories</a>
+        <a href="#offers-container">Offers</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Special Offers Banner Section -->
+  <section id="offers-container-section" class="section-container">
+    <h2>🔥 Special Offers</h2>
+    <div id="offers-container" class="grid"></div>
+  </section>
+
+  <!-- Dynamic Category Sections -->
+  <div id="categories-wrapper"></div>
+
+  <!-- Product Details Popup Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <img id="modal-main-img" src="" alt="Product Image">
+          <div id="modal-thumbnails" class="thumbnail-list"></div>
+        </div>
+        
+        <div class="modal-details">
+          <h2 id="modal-name"></h2>
+          <div class="price" id="modal-price"></div>
+          <p id="modal-desc"></p>
+          <div id="modal-buy-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About MyStore</h3>
+        <p>Your one-stop destination for quality products with instant order processing directly via WhatsApp.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#offers-container-section">Special Offers</a></li>
+          <li><a href="#categories-wrapper">All Categories</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Support</h3>
+        <p>Order queries? Click any product to chat directly with us on WhatsApp.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MyStore. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
